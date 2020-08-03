@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
+        <activity android:name=".ui.neo.view.NeoActivity" />
         <activity android:name=".ui.apod.view.APODActivity" />
         <activity
             android:name=".MainOptions"
