@@ -7,8 +7,7 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import butterknife.ButterKnife;
 
 public class MainOptions extends AppCompatActivity {
 
@@ -18,10 +17,7 @@ public class MainOptions extends AppCompatActivity {
         setContentView(R.layout.options_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
+        ButterKnife.bind(this);
     }
 
     @Override
@@ -45,4 +41,7 @@ public class MainOptions extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
