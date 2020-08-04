@@ -9,7 +9,7 @@ public interface APODInterface {
         void hideProgress();
         void hideApod();
         void showApod();
-        void showApodDetails();
+        void showApodDetails(APODModel apodModel);
         void fetchApodDetails();
         void showDataFetchError(String error);
         void onReloadData();
