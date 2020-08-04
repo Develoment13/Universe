@@ -1,5 +1,6 @@
 package com.development.hybrid.universe;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -7,7 +8,10 @@ import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.development.hybrid.universe.ui.apod.view.APODActivity;
+
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainOptions extends AppCompatActivity {
 
@@ -42,6 +46,13 @@ public class MainOptions extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @OnClick(R.id.imageViewADOPStart)
+    private void onStartADOPActivity (){
+        onNavigateActivity(APODActivity.class);
+    }
 
+    private void onNavigateActivity(Class activity) {
+        startActivity(new Intent(MainOptions.this, activity));
+    }
 
 }
