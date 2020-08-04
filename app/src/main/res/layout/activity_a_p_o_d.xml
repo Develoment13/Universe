@@ -32,6 +32,7 @@
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
+                android:id="@+id/imageViewADOPError"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
