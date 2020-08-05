@@ -26,23 +26,23 @@ import butterknife.OnClick;
 public class APODActivity extends BaseActivity<APODPresenter> implements APODInterface.view {
 
     @BindView(R.id.animation_view)
-    private LottieAnimationView animationView;
+    LottieAnimationView animationView;
     @BindView(R.id.linearLayoutError)
-    private LinearLayout layoutError;
+    LinearLayout layoutError;
     @BindView(R.id.imageViewADOPError)
-    private ImageView imageViewError;
+    ImageView imageViewError;
     @BindView(R.id.textViewErrorAPOD)
-    private TextView textViewError;
+    TextView textViewError;
     @BindView(R.id.linearLayoutInfoAPOD)
-    private LinearLayout layoutInfo;
+    LinearLayout layoutInfo;
     @BindView(R.id.imageViewIconAPOD)
-    private ImageView imageViewIcon;
+    ImageView imageViewIcon;
     @BindView(R.id.textViewTitleAPOD)
-    private TextView textViewTitle;
+    TextView textViewTitle;
     @BindView(R.id.textViewDateAPOD)
-    private TextView textViewDate;
+    TextView textViewDate;
     @BindView(R.id.textViewDetailsAPOD)
-    private TextView textViewDetails;
+    TextView textViewDetails;
 
     @NonNull
     @Override
@@ -108,7 +108,7 @@ public class APODActivity extends BaseActivity<APODPresenter> implements APODInt
     }
 
     @OnClick(R.id.imageViewADOPError)
-    private void setImageViewIconError(){
+    public void setImageViewIconError(){
         onReloadData();
     }
 }

@@ -47,11 +47,11 @@ public class MainOptions extends AppCompatActivity {
     }
 
     @OnClick(R.id.imageViewADOPStart)
-    private void onStartADOPActivity (){
+    public void onStartADOPActivity (){
         onNavigateActivity(APODActivity.class);
     }
 
-    private void onNavigateActivity(Class activity) {
+    public void onNavigateActivity(Class activity) {
         startActivity(new Intent(MainOptions.this, activity));
     }
 

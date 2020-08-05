@@ -9,7 +9,7 @@ public class APODModel {
     private String date;
     private String explanation;
     private String hdUrl;
-    @SerializedName("Url")
+    @SerializedName("url")
     private String lowResUrl;
     private String title;
     private String copyright;
